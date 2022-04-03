@@ -1,0 +1,25 @@
+apps:
+  - script: 'yarn start'
+    exec_mode: 'fork'
+    name: 'worker-1'
+    env:
+      PORT: 3001
+      NODE_ENV: production
+  - script: 'yarn start'
+    exec_mode: 'fork'
+    name: 'worker-2'
+    env:
+      PORT: 3002
+      NODE_ENV: production
+  - script: 'yarn start'
+    exec_mode: 'fork'
+    name: 'worker-3'
+    env:
+      PORT: 3003
+      NODE_ENV: production
+  - script: 'yarn start'
+    exec_mode: 'fork'
+    name: 'worker-4'
+    env:
+      PORT: 3004
+      NODE_ENV: production
